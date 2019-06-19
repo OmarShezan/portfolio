@@ -1,0 +1,34 @@
+#about{
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 50px;
+    height: auto;
+    justify-content: center;
+    
+}
+.title{
+    font-size: 30px;
+    text-align: center;
+    padding: 12px
+}
+.content{
+    
+    font-size: 1mw;
+    padding: 0px 100px;
+    
+}   
+
+.globe{
+    height:500px;;
+    width:500px;
+}
+.profilePic{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 10%;   
+    /* borderRadius:"50%", width:"200px", height:"200px", margin:"0px 1em", float: "left" */
+}
+strong{
+    font-weight: 600;
+}

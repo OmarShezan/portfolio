@@ -1,0 +1,66 @@
+ 
+  .card {
+    width:280px;
+    display: block;
+    margin: 20px;
+    transition: .25s;
+  }
+  .card:hover {
+    box-shadow: 10px 5px 40px 20px darken(#341cac, 50%);
+    cursor: pointer;
+    color: red;
+    
+  }
+  .button-primary {
+    transform: translate(10px, 0);
+  }
+  
+  .card-header {
+    height: 150px;
+    width: 100%;
+    padding: 15px;
+    width:100%;
+    background-size:cover;
+    color:rgb(255, 255, 255);
+  }
+  
+  .card-header--title {
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  .card-body {
+    padding: 15px;
+    background-color:#fff;
+    width:100%;
+  }
+  
+  .date {
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }

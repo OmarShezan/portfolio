@@ -1,0 +1,28 @@
+#footer{
+    color:white;
+    background-color: #191919;
+    text-align: center;
+    padding: 60px;
+}
+.icons{
+    padding-top: 30px;
+    margin: auto;   
+    display: flex;
+    justify-content: center;
+}
+.eachIcon{
+    margin:10px;
+    width: 50px;
+    height: 50px;
+    transition: all .2s ease-in-out;
+    display: table-cell;
+    
+    /* style={{display: "table-cell"}} */
+    
+}
+.eachIcon:hover{
+    transform: scale(1.3);
+}
+.copyright{
+    font-size: 10pt;
+}

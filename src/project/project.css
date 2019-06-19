@@ -1,0 +1,16 @@
+#projects{
+    background-color: rgb(241, 241, 241);
+    padding-bottom: 50px;
+    /* margin-top: -60px; */
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* grid-template-columns: 1fr 2fr;
+    grid-row-gap: 15px; */
+   
+}
+.details{
+    text-align: center;
+}
