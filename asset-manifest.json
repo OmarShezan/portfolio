@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.b586ce44.chunk.css",
+    "main.js": "/portfolio/static/js/main.e715692d.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.e715692d.chunk.js.map",
+    "runtime~main.js": "/portfolio/static/js/runtime~main.f308c8e6.js",
+    "runtime~main.js.map": "/portfolio/static/js/runtime~main.f308c8e6.js.map",
+    "static/css/2.38750c1c.chunk.css": "/portfolio/static/css/2.38750c1c.chunk.css",
+    "static/js/2.98d60d81.chunk.js": "/portfolio/static/js/2.98d60d81.chunk.js",
+    "static/js/2.98d60d81.chunk.js.map": "/portfolio/static/js/2.98d60d81.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.f1eca4335fd086918eaf609a20a6c847.js": "/portfolio/precache-manifest.f1eca4335fd086918eaf609a20a6c847.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/2.38750c1c.chunk.css.map": "/portfolio/static/css/2.38750c1c.chunk.css.map",
+    "static/css/main.b586ce44.chunk.css.map": "/portfolio/static/css/main.b586ce44.chunk.css.map",
+    "static/media/Arrow.05d5b02f.svg": "/portfolio/static/media/Arrow.05d5b02f.svg",
+    "static/media/Dark.jpg": "/portfolio/static/media/Dark.f33429aa.jpg",
+    "static/media/coding.svg": "/portfolio/static/media/coding.ea1639a4.svg",
+    "static/media/education.d21e6802.svg": "/portfolio/static/media/education.d21e6802.svg",
+    "static/media/eventTracker.png": "/portfolio/static/media/eventTracker.895fa133.png",
+    "static/media/facebook.128c7ca7.svg": "/portfolio/static/media/facebook.128c7ca7.svg",
+    "static/media/github.317608b2.svg": "/portfolio/static/media/github.317608b2.svg",
+    "static/media/style.css": "/portfolio/static/media/homebg.c9cf5325.jpg",
+    "static/media/instagram.754dbb72.svg": "/portfolio/static/media/instagram.754dbb72.svg",
+    "static/media/linkedIn.f5dc6e91.svg": "/portfolio/static/media/linkedIn.f5dc6e91.svg",
+    "static/media/me.jpg": "/portfolio/static/media/me.2fb08a4d.jpg",
+    "static/media/microbit.jpg": "/portfolio/static/media/microbit.7a757661.jpg",
+    "static/media/unsplash.de442888.svg": "/portfolio/static/media/unsplash.de442888.svg",
+    "static/media/work.f2b726f5.svg": "/portfolio/static/media/work.f2b726f5.svg"
+  }
+}
