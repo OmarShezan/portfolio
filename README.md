@@ -1,5 +1,5 @@
 ## Portfolio Website
-Software Engineer student portfolio website create using React
+Software Engineer student portfolio website created using React
 visit https://omarshezan.github.io/portfolio/ 
 
 
