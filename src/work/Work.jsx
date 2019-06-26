@@ -20,7 +20,7 @@ const Work = () =>{
               jobTitle="IT Assistant"
               companyName="Sheffield Hallam University"
               skillList= {["Java", "XML", "Microsoft Excel"]}
-              texts = "3 month summer job working with Convrise IT support team. Converise is a web application used by PhD student to submit request for research application."
+              texts = "3-month summer job working with Convrise IT support team. Converise is a web application used by PhD student to submit a request for research application."
               icon = "w"
               />
 
@@ -29,7 +29,7 @@ const Work = () =>{
               jobTitle="Junior Software Engineer"
               companyName="Servelec"
               skillList={[".NET","C#", "Silverlight", "SQL"]}
-              texts = "At Servelec HSC I have worked with many different technologies to fix bugs, develop new tools and document changes. While working in a team I was able to gain valuable experience in teamwork and communication skills"
+              texts = "At Servelec HSC I have worked with many different technologies to fix bugs, develop new tools and document changes. While working in a team I was able to gain valuable experience in teamwork and communication skills."
               icon = "w"
               />
 

@@ -1,0 +1,21 @@
+<svg width="159" height="106" viewBox="0 0 159 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="159" height="106" fill="#C6C6C6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20 12C18.3431 12 17 13.3431 17 15V34C17 35.6569 18.3431 37 20 37H139C140.657 37 142 35.6569 142 34V15C142 13.3431 140.657 12 139 12H20ZM23 13.25C21.8954 13.25 21 14.1454 21 15.25V33.75C21 34.8546 21.8954 35.75 23 35.75H136C137.105 35.75 138 34.8546 138 33.75V15.25C138 14.1454 137.105 13.25 136 13.25H23Z" fill="#4F4F4F"/>
+<rect x="21" y="13.25" width="117" height="22.5" rx="2" fill="#303030"/>
+<rect x="26" y="16" width="8" height="16" rx="3" fill="#C4C4C4"/>
+<rect x="37" y="16" width="8" height="16" rx="3" fill="#C4C4C4"/>
+<rect x="48" y="16" width="8" height="16" rx="3" fill="#C4C4C4"/>
+<circle cx="124.5" cy="24.5" r="6.5" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20 41C18.3431 41 17 42.3431 17 44V63C17 64.6569 18.3431 66 20 66H139C140.657 66 142 64.6569 142 63V44C142 42.3431 140.657 41 139 41H20ZM23 42.25C21.8954 42.25 21 43.1454 21 44.25V62.75C21 63.8546 21.8954 64.75 23 64.75H136C137.105 64.75 138 63.8546 138 62.75V44.25C138 43.1454 137.105 42.25 136 42.25H23Z" fill="#4F4F4F"/>
+<rect x="21" y="42.25" width="117" height="22.5" rx="2" fill="#303030"/>
+<rect x="26" y="45" width="8" height="16" rx="3" fill="#C4C4C4"/>
+<rect x="37" y="45" width="8" height="16" rx="3" fill="#C4C4C4"/>
+<rect x="48" y="45" width="8" height="16" rx="3" fill="#C4C4C4"/>
+<circle cx="124.5" cy="53.5" r="6.5" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20 70C18.3431 70 17 71.3431 17 73V92C17 93.6569 18.3431 95 20 95H139C140.657 95 142 93.6569 142 92V73C142 71.3431 140.657 70 139 70H20ZM23 71.25C21.8954 71.25 21 72.1454 21 73.25V91.75C21 92.8546 21.8954 93.75 23 93.75H136C137.105 93.75 138 92.8546 138 91.75V73.25C138 72.1454 137.105 71.25 136 71.25H23Z" fill="#4F4F4F"/>
+<rect x="21" y="71.25" width="117" height="22.5" rx="2" fill="#303030"/>
+<rect x="26" y="74" width="8" height="16" rx="3" fill="#C4C4C4"/>
+<rect x="37" y="74" width="8" height="16" rx="3" fill="#C4C4C4"/>
+<rect x="48" y="74" width="8" height="16" rx="3" fill="#C4C4C4"/>
+<circle cx="124.5" cy="82.5" r="6.5" fill="#C4C4C4"/>
+</svg>

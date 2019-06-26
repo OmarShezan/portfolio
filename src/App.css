@@ -3,10 +3,11 @@ html, body{
   width: 100%;
 }
 
-@media screen and (min-width: 1400px) {
+/* anything bigger than 1100px are affected */
+@media screen and (min-width: 1100px) {
   .main{
       font-size: 20px;
-      padding-left: 10em;
-      padding-right: 10em;
+      padding-left: 5em;
+      padding-right: 5em;
   }
 }
