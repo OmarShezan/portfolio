@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2031704cd826666cc7729cedbc57b41e",
+    "revision": "e282ce054b90dc28daaa6b28afd6fb63",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "5a658572cd768005e3ec",
+    "revision": "c286092d98bd2bcb6b29",
     "url": "/portfolio/static/css/2.38750c1c.chunk.css"
   },
   {
-    "revision": "0cea5e98f1309122713c",
-    "url": "/portfolio/static/css/main.0ca1f920.chunk.css"
+    "revision": "fb0d1f82d55a5ab9f185",
+    "url": "/portfolio/static/css/main.70098331.chunk.css"
   },
   {
-    "revision": "5a658572cd768005e3ec",
-    "url": "/portfolio/static/js/2.98d60d81.chunk.js"
+    "revision": "c286092d98bd2bcb6b29",
+    "url": "/portfolio/static/js/2.ece4014e.chunk.js"
   },
   {
-    "revision": "0cea5e98f1309122713c",
-    "url": "/portfolio/static/js/main.1979222f.chunk.js"
+    "revision": "fb0d1f82d55a5ab9f185",
+    "url": "/portfolio/static/js/main.9610839a.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
@@ -28,20 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/Arrow.05d5b02f.svg"
   },
   {
-    "revision": "f33429aab678c5ecf1c8be72c5787c58",
-    "url": "/portfolio/static/media/Dark.f33429aa.jpg"
-  },
-  {
-    "revision": "ea1639a459bfbda779bb578df41e9538",
-    "url": "/portfolio/static/media/coding.ea1639a4.svg"
-  },
-  {
     "revision": "d21e6802afd4703b7e13c55d38c8fe66",
     "url": "/portfolio/static/media/education.d21e6802.svg"
-  },
-  {
-    "revision": "895fa1332f4a58b578ae6675eb602911",
-    "url": "/portfolio/static/media/eventTracker.895fa133.png"
   },
   {
     "revision": "128c7ca7fb3a3e698d92d542aaa40a69",
@@ -66,14 +54,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2fb08a4d66e3925e5b138b21296edee3",
     "url": "/portfolio/static/media/me.2fb08a4d.jpg"
-  },
-  {
-    "revision": "7a757661a8de1c6f1635b06131d11c86",
-    "url": "/portfolio/static/media/microbit.7a757661.jpg"
-  },
-  {
-    "revision": "f4c906b6f5fd2bdfa7ad6aa7016b715b",
-    "url": "/portfolio/static/media/server.f4c906b6.svg"
   },
   {
     "revision": "de44288834bb3a6ebceb2d288900e815",
