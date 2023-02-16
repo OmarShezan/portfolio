@@ -15,12 +15,13 @@ class Work extends React.Component {
     };
   }
   componentDidMount() {
-    fetch("https://us-central1-os-backend.cloudfunctions.net/getAllExperience")
-      .then((response) => response.json())
-      .then((data) => {
-        let temArray = [];
-        let value = Object.values(data);
-        let index = 0;
+    const localArr = localStorage.getItem("workExperience")
+    if (localArr){
+      let value = JSON.parse(localArr)
+      let temArray = [];
+      console.log("local store")
+      console.log(localArr)
+      let index = 0;
         value.forEach((item) => {
           index += 1;
           temArray.push({
@@ -42,7 +43,39 @@ class Work extends React.Component {
           experience: sortedArray,
           isloading: false,
         });
-      });
+    }else{
+
+      fetch("https://us-central1-os-backend.cloudfunctions.net/getAllExperience")
+        .then((response) => response.json())
+        .then((data) => {
+          let temArray = [];
+          let value = Object.values(data);
+          localStorage.setItem('workExperience', JSON.stringify(value));
+  
+          let index = 0;
+          value.forEach((item) => {
+            index += 1;
+            temArray.push({
+              company: item.company,
+              position: item.position,
+              date: item.date,
+              text: item.text,
+              skills: item.skills,
+              icon: item.icon,
+              timestamp: item.timestamp,
+              index: index,
+            });
+          });
+          let sortedArray = [];
+          sortedArray = temArray.sort((a, b) => {
+            return b.timestamp - a.timestamp;
+          });
+          this.setState({
+            experience: sortedArray,
+            isloading: false,
+          });
+        });
+    }
   }
 
   render() {

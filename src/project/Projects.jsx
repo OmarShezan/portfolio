@@ -12,29 +12,53 @@ class Projects extends React.Component {
         }
     }
     componentDidMount() {
-        fetch("https://us-central1-os-backend.cloudfunctions.net/getAllProjects")
-            .then((response) => response.json())
-            .then((data) => {
-                let temArray = []
-                let value = Object.values(data)
-                value.forEach(item => {
-                    temArray.push({
-                        img: item.img,
-                        name: item.name,
-                        title: item.title,
-                        date: item.data,
-                        text: item.text,
-                        skills: item.skills,
-                        link: item.link
-                    })
-                })
-                // console.log(value)
-                // console.log(temArray)
-                this.setState({
-                    projects: temArray,
-                    isloading: false
+        const localArr = localStorage.getItem("projects")
+        if (localArr){
+            let value = JSON.parse(localArr)
+            let temArray = []
+            value.forEach(item => {
+                temArray.push({
+                    img: item.img,
+                    name: item.name,
+                    title: item.title,
+                    date: item.data,
+                    text: item.text,
+                    skills: item.skills,
+                    link: item.link
                 })
             })
+            this.setState({
+                projects: temArray,
+                isloading: false
+            })
+        }
+        else{
+            fetch("https://us-central1-os-backend.cloudfunctions.net/getAllProjects")
+                .then((response) => response.json())
+                .then((data) => {
+                    let temArray = []
+                    let value = Object.values(data)
+                    localStorage.setItem('projects', JSON.stringify(value));
+    
+                    value.forEach(item => {
+                        temArray.push({
+                            img: item.img,
+                            name: item.name,
+                            title: item.title,
+                            date: item.data,
+                            text: item.text,
+                            skills: item.skills,
+                            link: item.link
+                        })
+                    })
+                    // console.log(value)
+                    // console.log(temArray)
+                    this.setState({
+                        projects: temArray,
+                        isloading: false
+                    })
+                })
+        }
     }
     render() {
         return (
