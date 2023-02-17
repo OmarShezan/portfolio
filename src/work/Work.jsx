@@ -16,42 +16,48 @@ class Work extends React.Component {
   }
   componentDidMount() {
     const localArr = localStorage.getItem("workExperience")
-    if (localArr){
-      let value = JSON.parse(localArr)
+    if (localArr) {
+      const { value, timestamp } = JSON.parse(localArr);
+      const now = Date.now();
+      const twoMonths = 2 * 30 * 24 * 60 * 60 * 1000; // 2 months in milliseconds
+      // Check if the data is older than 2 months
+      if (now - timestamp > twoMonths) {
+        localStorage.removeItem("workExperience");
+      }
       let temArray = [];
-      console.log("local store")
-      console.log(localArr)
       let index = 0;
-        value.forEach((item) => {
-          index += 1;
-          temArray.push({
-            company: item.company,
-            position: item.position,
-            date: item.date,
-            text: item.text,
-            skills: item.skills,
-            icon: item.icon,
-            timestamp: item.timestamp,
-            index: index,
-          });
+      value.forEach((item) => {
+        index += 1;
+        temArray.push({
+          company: item.company,
+          position: item.position,
+          date: item.date,
+          text: item.text,
+          skills: item.skills,
+          icon: item.icon,
+          timestamp: item.timestamp,
+          index: index,
         });
-        let sortedArray = [];
-        sortedArray = temArray.sort((a, b) => {
-          return b.timestamp - a.timestamp;
-        });
-        this.setState({
-          experience: sortedArray,
-          isloading: false,
-        });
-    }else{
+      });
+      let sortedArray = [];
+      sortedArray = temArray.sort((a, b) => {
+        return b.timestamp - a.timestamp;
+      });
+      this.setState({
+        experience: sortedArray,
+        isloading: false,
+      });
+    } else {
 
       fetch("https://us-central1-os-backend.cloudfunctions.net/getAllExperience")
         .then((response) => response.json())
         .then((data) => {
           let temArray = [];
           let value = Object.values(data);
-          localStorage.setItem('workExperience', JSON.stringify(value));
-  
+          const timestamp = Date.now();
+          const dataWithTimestamp = { value, timestamp };
+          localStorage.setItem('workExperience', JSON.stringify(dataWithTimestamp));
+
           let index = 0;
           value.forEach((item) => {
             index += 1;

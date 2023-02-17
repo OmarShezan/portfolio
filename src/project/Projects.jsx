@@ -13,8 +13,14 @@ class Projects extends React.Component {
     }
     componentDidMount() {
         const localArr = localStorage.getItem("projects")
-        if (localArr){
-            let value = JSON.parse(localArr)
+        if (localArr) {
+            const { value, timestamp } = JSON.parse(localArr);
+            const now = Date.now();
+            const twoMonths = 2 * 30 * 24 * 60 * 60 * 1000; // 2 months in milliseconds
+            // Check if the data is older than 2 months
+            if (now - timestamp > twoMonths) {
+                localStorage.removeItem('projects');
+            }
             let temArray = []
             value.forEach(item => {
                 temArray.push({
@@ -32,14 +38,16 @@ class Projects extends React.Component {
                 isloading: false
             })
         }
-        else{
+        else {
             fetch("https://us-central1-os-backend.cloudfunctions.net/getAllProjects")
                 .then((response) => response.json())
                 .then((data) => {
                     let temArray = []
                     let value = Object.values(data)
-                    localStorage.setItem('projects', JSON.stringify(value));
-    
+                    const timestamp = Date.now();
+                    const dataWithTimestamp = { value, timestamp };
+                    localStorage.setItem('projects', JSON.stringify(dataWithTimestamp));
+
                     value.forEach(item => {
                         temArray.push({
                             img: item.img,
@@ -63,40 +71,40 @@ class Projects extends React.Component {
     render() {
         return (
             <div id="projects">
+                {
+
+                }
+                <Title name="Projects" />
+                <div className="details">
+                    <p>Showcasing some of my most successful and favourite projects that I was involved in<span role="img" aria-label="smiling face">😆</span>.<br /> More project will be coming soon...</p>
+                </div>
+                <div className="wrapper">
+                    <Fade right>
                         {
-                              
+                            this.state.isloading ?
+                                <div className="lds-ripple"><div></div><div></div></div>
+                                :
+                                this.state.projects.map((Element, index) => {
+                                    if (Element.img !== "") {
+                                        return (
+                                            <Card
+                                                key={index}
+                                                imagePath={Element.img}
+                                                date={Element.date}
+                                                title={Element.title}
+                                                text={Element.text}
+                                                name={Element.name}
+                                                skills={Element.skills}
+                                                link={Element.link} />
+                                        )
+                                    }
+                                    else return ""
+                                })
                         }
-                          <Title name="Projects"/>
-                            <div className="details">
-                                <p>Showcasing some of my most successful and favourite projects that I was involved in<span role="img" aria-label="smiling face">😆</span>.<br/> More project will be coming soon...</p>
-                            </div>
-                          <div className="wrapper">
-                          <Fade right>
-                                {
-                                      this.state.isloading?
-                                          <div className="lds-ripple"><div></div><div></div></div>
-                                          :
-                                          this.state.projects.map((Element, index)=>{
-                                                if(Element.img !== "")  {
-                                                      return(   
-                                                      <Card 
-                                                            key={index}
-                                                            imagePath={Element.img}
-                                                            date={Element.date}
-                                                            title={Element.title}
-                                                            text= {Element.text}
-                                                            name={Element.name}
-                                                            skills={Element.skills}
-                                                            link = {Element.link}/>
-                                                            )
-                                                }
-                                                else return ""              
-                                      })
-                                }
-                            </Fade>
-                          </div>
-                          
-                    </div>
+                    </Fade>
+                </div>
+
+            </div>
         )
     }
 
