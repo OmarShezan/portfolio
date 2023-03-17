@@ -128,7 +128,7 @@ class Contact extends React.Component {
           <input type="text" name="def" value={this.state.def} onChange={this.handleChange} className="field-style field-full align-none def"/>
           </li> */}
           </ul>
-          <p>Email: shezan60@gmail.com</p>
+          <p>Email: <a href='mailto:omarshezanbusiness@gmail.com'>omarshezanbusiness@gmail.com</a></p>
           </Fade>
         </form>
         

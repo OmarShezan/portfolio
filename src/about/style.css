@@ -13,7 +13,9 @@
 .content{
     
     font-size: 1mw;
-    padding: 0px 100px;
+    padding: 0px 60px;
+    display: flex;
+    align-items: center;
     
 }   
 
@@ -23,10 +25,10 @@
 }
 .profilePic{
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    float: left;
-    margin-right: 10%;   
+    width: 220px;
+    height: 220px;
+    margin-right: 3%;
+    margin-top: 1%;   
     /* borderRadius:"50%", width:"200px", height:"200px", margin:"0px 1em", float: "left" */
 }
 strong{

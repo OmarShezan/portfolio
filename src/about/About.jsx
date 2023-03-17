@@ -7,14 +7,18 @@ const HomePage = () =>{
               <Title  name="About"/>
               <div className="content">
               <img className="profilePic" alt="standing near cliff" src={require('../assets/me.jpg')}/>
-              My interest in programming came from studying computing in college. I was fascinated by the possibility and power of programming. as I learnt more about programming my passion for the industry grew and I decided to study 
-              <strong> BEng Software Engineering</strong> at <strong> Sheffield Hallam University</strong>
+              <div className="about-text">
+              My interest in programming began during my college years when I studied computing.
+              I was fascinated by the possibility and power of programming.
+              As I learned more about programming, my passion for the industry grew, and I decided to pursue <strong>BEng Software Engineering </strong> 
+               at <strong>Sheffield Hallam University</strong>. Since then, I have enjoyed learning about new technologies and frameworks, keeping myself updated with the industry, and inspiring me to create new things.
+              
               <br/>
               <br/>
-              I always enjoy learning about new technology and frameworks, it keeps me updated with the industry and inspires me to create new things.  Currently, I'm learning flutter to create a small mobile app
-              other than programming I love photography, editing and playing sports. 
+              Aside from programming, I also have a keen interest in photography, editing, and sports. I find that these hobbies provide me with a creative outlet and allow me to approach problem-solving from a different perspective.</div>
+          
               </div>
-          </div>
+              </div>
     )
 }
 export default HomePage;
