@@ -16,8 +16,8 @@ class Projects extends React.Component {
         if (localArr) {
             const { value, timestamp } = JSON.parse(localArr);
             const now = Date.now();
-            const twoMonths = 2 * 30 * 24 * 60 * 60 * 1000; // 2 months in milliseconds
-            // Check if the data is older than 2 months
+            const twoMonths = 86400000; // 24 hours in milliseconds
+            // Check if the data is older than 24 hours
             if (now - timestamp > twoMonths) {
                 localStorage.removeItem('projects');
             }

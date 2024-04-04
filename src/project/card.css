@@ -27,6 +27,7 @@
   .card-header--title {
     text-transform: uppercase;
     margin: 0;
+    text-shadow: 2px 2px black;
   }
   
   .card-body {
