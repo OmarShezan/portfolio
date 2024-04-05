@@ -12,6 +12,12 @@ const HomePage = () =>{
 
               <div id="title"><span className="hello">Hello,</span> I'm Omar Shezan</div>
               <div id = "sub-title">Software Engineer based in Sheffield (UK).</div>
+              <br/>
+              <button id = "sub-title" className='cv'>
+                  <a
+                  style={{ textDecoration: 'none', color: 'white' }}
+                  href='https://firebasestorage.googleapis.com/v0/b/os-backend.appspot.com/o/omar_cv2021.pdf?alt=media&token=09645343-843c-48eb-8840-d14221331e61' rel="noreferrer" target='_blank'>Download CV</a></button> 
+              
               <Link
                       className="menuItem"
                       activeClass="active"
