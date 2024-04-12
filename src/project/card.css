@@ -1,9 +1,10 @@
  
   .card {
-    width:280px;
+    width:310px;
     display: block;
-    margin: 20px;
+    margin: 10px;
     transition: .25s;
+    background-color: white;
   }
   .card:hover {
     box-shadow: 10px 5px 40px 20px darken(#341cac, 50%);
@@ -18,7 +19,6 @@
   .card-header {
     height: 150px;
     width: 100%;
-    padding: 15px;
     width:100%;
     background-size:cover;
     color:rgb(255, 255, 255);
@@ -28,12 +28,12 @@
     text-transform: uppercase;
     margin: 0;
     text-shadow: 2px 2px black;
+    padding: 5px;
+    background-color: #0000009c;
   }
   
   .card-body {
     padding: 15px;
-    background-color:#fff;
-    width:100%;
   }
   
   .date {
