@@ -3,6 +3,9 @@
   "version": "0.1.1",
   "private": true,
   "homepage": "https://omarshezan.github.io/portfolio/",
+  "engines": {
+    "node": ">=18.0.0 <21.0.0"  //  Allow Node.js 18, 19, or 20
+  },
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
